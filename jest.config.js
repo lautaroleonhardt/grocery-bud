@@ -1,0 +1,11 @@
+export default {
+  collectCoverage: false,
+  collectCoverageFrom: ['src/**/*.{js,jsx}'],
+  coverageDirectory: 'coverage',
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.js'],
+  moduleNameMapper: {
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/.jest/mocks/fileMock.js',
+    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
+  },
+}
