@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import { toast } from 'react-toastify';
+import { useState } from 'react'
+import { toast } from 'react-toastify'
 
 const Form = ({ addItem }) => {
-  const [newItemName, setNewItemName] = useState('');
+  const [newItemName, setNewItemName] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (!newItemName) {
-      toast.error('please provide value');
-      return;
+      toast.error('please provide value')
+      return
     }
-    addItem(newItemName);
-    setNewItemName('');
-  };
+    addItem(newItemName)
+    setNewItemName('')
+  }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-testid='form'>
       <h4>grocery bud</h4>
       <div className='form-control'>
         <input
@@ -29,6 +29,6 @@ const Form = ({ addItem }) => {
         </button>
       </div>
     </form>
-  );
-};
-export default Form;
+  )
+}
+export default Form
