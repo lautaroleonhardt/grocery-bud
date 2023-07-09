@@ -19,7 +19,7 @@ const Form = ({ addItem }) => {
       <h4>grocery bud</h4>
       <div className='form-control'>
         <input
-          type='text '
+          type='text'
           className='form-input'
           value={newItemName}
           onChange={(event) => setNewItemName(event.target.value)}
