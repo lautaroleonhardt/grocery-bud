@@ -9,9 +9,11 @@
     "preview": "vite preview",
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
+    "@wdio/cli": "^8.11.4",
     "nanoid": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,8 +28,15 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "@wdio/local-runner": "^8.11.3",
+    "@wdio/mocha-framework": "^8.11.0",
+    "@wdio/spec-reporter": "^8.11.2",
+    "chromedriver": "^114.0.2",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
-    "vite": "^4.1.0"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.1.0",
+    "wdio-chromedriver-service": "^8.1.1"
   }
 }
